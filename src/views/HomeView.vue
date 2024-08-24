@@ -1,18 +1,23 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <ComLib />
+    <ViewMain />
+    <PropertyConfig />
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
-
-export default defineComponent({
-  name: 'HomeView',
-  components: {
-    HelloWorld,
-  },
-});
+<script lang="ts" setup>
+import ComLib from "./com-lib/ComLib.vue";
+import ViewMain from "./view-main/ViewMain.vue";
+import PropertyConfig from "./property-config/PropertyConfig.vue";
 </script>
+
+<style lang="scss" scoped>
+.home {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  background-color: #f4f4f4;
+  height: 100vh;
+  overflow: hidden;
+}
+</style>
