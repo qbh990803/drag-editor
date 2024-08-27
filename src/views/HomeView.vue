@@ -1,21 +1,21 @@
 <template>
   <div class="home">
-    <ComLib />
+    <ElementLibrary />
     <ViewMain />
-    <PropertyConfig />
+    <PropertiesPanel />
   </div>
 </template>
 
 <script lang="ts" setup>
-import ComLib from "./com-lib/ComLib.vue";
+import ElementLibrary from "./element-library/ElementLibrary.vue";
 import ViewMain from "./view-main/ViewMain.vue";
-import PropertyConfig from "./property-config/PropertyConfig.vue";
+import PropertiesPanel from "./properties-panel/PropertiesPanel.vue";
 </script>
 
 <style lang="scss" scoped>
 .home {
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-columns: 1fr 5fr 1fr;
   background-color: #f4f4f4;
   height: 100vh;
   overflow: hidden;
